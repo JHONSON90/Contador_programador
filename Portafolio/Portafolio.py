@@ -106,8 +106,7 @@ def hvcontador() -> rx.Component:
 
 app = rx.App(
     stylesheets=Style.STYLESHEETS,
-    style=Style.BASE_STYLE
-    
+    style=Style.BASE_STYLE, 
 )
 app.add_page(index)
 app.add_page(about)

@@ -35,12 +35,14 @@ def componente_carta() -> rx.Component:
                             text_align = "center"
                             ),
                 align="center",
+                text_align="center",
                 padding = Size.DEFAULT.value,
                 margin = Size.DEFAULT.value,
                     ),
         ),
         rx.mobile_and_tablet(
             rx.flex(
+                rx.container(height="1em"),
                 rx.heading("Acerca de mi!!", align="center"),
                     rx.spacer(),
                 rx.text("Soy un profesional versátil con una sólida formación en contabilidad y una creciente pasión por la tecnología. ",
@@ -59,13 +61,7 @@ def componente_carta() -> rx.Component:
                             width="100%",
                             padding_left= Size.BIG.value
                             ),   
-                    rx.image(
-                        src="/segunda_idea.jfif",
-                        width="25%",
-                        height="25%",
-                        border_radius="30px 70px",
-                        #border="5px olid #555"
-                        ),
+                    text_align="center",
                     padding= Size.BIG.value,
                     wrap= "nowrap",
                     align="center",

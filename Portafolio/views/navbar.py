@@ -60,10 +60,10 @@ def navbar() -> rx.Component:
                         rx.menu.item("Home"),
                         #TODO COLOCAR EL ENLACE AL HOME
                         rx.menu.item(
-                                rx.link("Contador Publico", href="/contador"),
+                                rx.link("Contador Publico", href="/hvcontador"),
                                 ),
                         rx.menu.item(
-                                rx.link("Programador", href="/programador")),
+                                rx.link("Programador", href="/programadorsr")),
                                 #rx.menu.item("Service 3"),  
                         rx.menu.item(
                                 rx.link("Acerca de mi", href="/about")),                     

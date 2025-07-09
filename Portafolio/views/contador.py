@@ -49,10 +49,9 @@ def contador()->rx.Component:
             habilidades_personales("- Aprendizaje continuo"),
             spacing="1"            
             ),
-            width="33%",
-            spacing="4",
-            margin="4px",
-            padding="4px"            
+            width=["100%", "100%", "33%"],
+            margin="1rem",
+            padding="1rem"            
         ),
         rx.box(
             titulos("EXPERIENCIA LABORAL"),
@@ -65,11 +64,9 @@ def contador()->rx.Component:
             rx.spacer(spacing="3", direction="row"),
             experiencia("01-2009","12-2015","Proinsalud S.A.", "Coordinador de suministros", "Acompañamiento activo en las actividades logísticas y operativas, optimizando procesos a través de la gestión documental eficiente, elaboración de planes de compras estratégicos, control de inventarios preciso y presentación de informes que permitan la toma de decisiones basadas en datos. Impulsar la mejora continua en los procesos de adquisición de insumos y equipos médicos."),
             #experiencia()
-            width="33%",
-            spacing="6",
-            
-            margin="4px",
-            padding="4px" 
+            width=["100%", "100%", "33%"],
+            padding="1rem",           
+            margin="1rem" 
         ),
         rx.box(
             titulos("ESTUDIOS"),
@@ -83,6 +80,7 @@ def contador()->rx.Component:
             hobies("music", "Escuchar música"),
             hobies("code-xml", "Aprender a programar"),
             hobies("dumbbell", "Hacer ejercicio"),
+            rx.spacer(height="1rem"),
             
             titulos("ALGUNOS TRABAJOS"),
             rx.vstack(
@@ -94,21 +92,22 @@ def contador()->rx.Component:
                                   variant = "outline",
                                   color_scheme = "gray",
                                   high_contrast = True,
-                                  width = "50%"
+                                  width = ["100%", "50%"]
                                   )
                             ),
                     rx.dialog.content(
                         rx.image(
                             src="/power_bi/gastos.JPG",
                             style={
-                                "width": "0px",
+                                "width": "20%",
+                                "max_width": "300px",
                                 "flex_grow": "1",
                                 "object_fit": "cover",
                                 "opacity": ".8",
                                 "transition": ".5s ease",
                                 "_hover": {
                                     "cursor": "crosshair",
-                                    "width": "500px",
+                                    "width": "100%",
                                     "opacity": "1",
                                     "filter": "contrast(120%)"
                                 }
@@ -117,14 +116,15 @@ def contador()->rx.Component:
                         rx.image(
                             src="/power_bi/honorarios_cuentas_medicas.JPG",
                             style={
-                                "width": "0px",
+                                "width": "20%",
+                                "max_width": "300px",
                                 "flex_grow": "1",
                                 "object_fit": "cover",
                                 "opacity": ".8",
                                 "transition": ".5s ease",
                                 "_hover": {
                                     "cursor": "crosshair",
-                                    "width": "500px",
+                                    "width": "100%",
                                     "opacity": "1",
                                     "filter": "contrast(120%)"
                             }
@@ -132,14 +132,15 @@ def contador()->rx.Component:
                     ),
                         rx.image(
                             src="/power_bi/Nomina_2.JPG",
-                            style={"width": "0px",
-                                "flex_grow": "1",
+                            style={"width": "20%",
+                            "max_width": "300px",
+                            "flex_grow": "1",
                                 "object_fit": "cover",
                                 "opacity": ".8",
                                 "transition": ".5s ease",
                                 "_hover": {
                                     "cursor": "crosshair",
-                                    "width": "500px",
+                                    "width": "100%",
                                     "opacity": "1",
                                     "filter": "contrast(120%)"
                             }
@@ -154,12 +155,9 @@ def contador()->rx.Component:
                             width = "2%"
                     )
                 ),
-                max_width = "900px",
-                style = {
-                    "display": "flex",
-                    "width": "80%",
-                    "height": "630px"
-                }
+                max_width = ["90vw", "900px"],
+                max_height = ["90vh", "900px"],
+                style = {"display": "flex", "flex_direction": ["column", "row"], "height": "50vh", "width": "50vw"}
             ),
                 ),
                 rx.dialog.root(
@@ -170,21 +168,22 @@ def contador()->rx.Component:
                                   variant = "outline",
                                   color_scheme = "gray",
                                   high_contrast = True,
-                                  width = "50%"
+                                  width = ["100%", "50%"]
                                   ),   
                         ),
                         rx.dialog.content(
                           rx.image(
                               src="/excel/excel_1.JPG",
                               style={
-                                "width": "0px",
+                                "width": "20%",
+                                "max_width": "300px",
                                 "flex_grow": "1",
                                 "object_fit": "cover",
                                 "opacity": ".8",
                                 "transition": ".5s ease",
                                 "_hover": {
                                     "cursor": "crosshair",
-                                    "width": "500px",
+                                    "width": "100%",
                                     "opacity": "1",
                                     "filter": "contrast(120%)"
                                 }
@@ -193,14 +192,15 @@ def contador()->rx.Component:
                           rx.image(
                               src="/excel/excel_2.JPG",
                               style={
-                                "width": "0px",
+                                "width": "20%",
+                                "max_width": "300px",
                                 "flex_grow": "1",
                                 "object_fit": "cover",
                                 "opacity": ".8",
                                 "transition": ".5s ease",
                                 "_hover": {
                                     "cursor": "crosshair",
-                                    "width": "500px",
+                                    "width": "100%",
                                     "opacity": "1",
                                     "filter": "contrast(120%)"
                                 }
@@ -209,14 +209,15 @@ def contador()->rx.Component:
                           rx.image(
                               src="/excel/excel_3.JPG",
                               style={
-                                "width": "0px",
+                                "width": "20%",
+                                "max_width": "300px",
                                 "flex_grow": "1",
                                 "object_fit": "cover",
                                 "opacity": ".8",
                                 "transition": ".5s ease",
                                 "_hover": {
                                     "cursor": "crosshair",
-                                    "width": "500px",
+                                    "width": "100%",
                                     "opacity": "1",
                                     "filter": "contrast(120%)"
                                 }
@@ -231,12 +232,9 @@ def contador()->rx.Component:
                                         width = "2%"
                                     )
                                 ),
-                          max_width = "900px",
-                          style = {
-                            "display": "flex",
-                            "width": "600px",
-                            "height": "430px"
-                        }
+                          max_width = ["90vw", "900px"],
+                          max_height = ["90vh", "900px"],
+                          style = {"display": "flex", "flex_direction": "row", "height": "50vh", "width": "50vw"}
                         ),
                     ),
                 rx.dialog.root(
@@ -247,81 +245,86 @@ def contador()->rx.Component:
                             variant = "outline",
                             color_scheme = "gray",
                             high_contrast = True,
-                            width = "50%"
+                            width = ["100%", "50%"]
                             )
                         ),
                     rx.dialog.content(
                         rx.image(
-                            src="/automatizaciones/auto_python.JPG",
+                            src="/automatizaciones/26shots_so.webp",
                             style={
-                                "width": "0px",
+                                "width": "20%",
+                                "max_width": "300px",
                                 "flex_grow": "1",
                                 "object_fit": "cover",
                                 "opacity": ".8",
                                 "transition": ".5s ease",
                                 "_hover": {
                                     "cursor": "crosshair",
-                                    "width": "300px",
+                                    "width": "100%",
                                     "opacity": "1",
                                     "filter": "contrast(120%)"
                             }
                         }
                     ),
                         rx.image(
-                            src="/automatizaciones/auto_python.JPG",
-                            style={"width": "0px",
-                                "flex_grow": "1",
+                            src="/automatizaciones/39_1x_shots_so.webp",
+                            style={"width": "20%",
+                            "max_width": "300px",
+                            "flex_grow": "1",
                                 "object_fit": "cover",
                                 "opacity": ".8",
                                 "transition": ".5s ease",
                                 "_hover": {
                                     "cursor": "crosshair",
-                                    "width": "300px",
+                                    "width": "100%",
                                     "opacity": "1",
                                     "filter": "contrast(120%)"
                             }
                         }
                     ),
                         rx.image(
-                            src="/automatizaciones/automa_excel4.JPG",
-                            style={"width": "0px",
-                                "flex_grow": "1",
+                            src="/automatizaciones/64shots_so.webp",
+                            style={"width": "20%",
+                            "max_width": "300px",
+                            "flex_grow": "1",
                                 "object_fit": "cover",
                                 "opacity": ".8",
                                 "transition": ".5s ease",
                                 "_hover": {
                                     "cursor": "crosshair",
-                                    "width": "300px",
+                                    "width": "100%",
                                     "opacity": "1",
                                     "filter": "contrast(120%)"
                             }
                         }
                     ),
                         rx.image(
-                            src="/automatizaciones/automati_excel.JPG",
-                            style={"width": "0px",
-                                "flex_grow": "1",
+                            src="/automatizaciones/323_1x_shots_so.webp",
+                            style={"width": "20%",
+                            "max_width": "300px",
+                            "flex_grow": "1",
                                 "object_fit": "cover",
                                 "opacity": ".8",
                                 "transition": ".5s ease",
                                 "_hover": {
                                     "cursor": "crosshair",
-                                    "width": "300px",
+                                    "width": "100%",
                                     "opacity": "1",
                                     "filter": "contrast(120%)"
                             }
                         }
                     ),
                         rx.image(
-                            src="/automatizaciones/automatizacion_excel_2.JPG",
-                            style={"width": "0px",
-                                "flex_grow": "1",
+                            src="/automatizaciones/913_1x_shots_so.webp",
+                            style={"width": "20%",
+                            "max_width": "300px",
+                            "flex_grow": "1",
                                 "object_fit": "cover",
                                 "opacity": ".8",
                                 "transition": ".5s ease",
                                 "_hover": {
                                     "cursor": "crosshair",
-                                    "width": "300px",
+                                    "width": "100%",
                                     "opacity": "1",
                                     "filter": "contrast(120%)"
                             }
@@ -329,31 +332,27 @@ def contador()->rx.Component:
                     ),
                 rx.dialog.close(
                     rx.button("X",
-                              size = "1",
-                                variant="outline",
-                                color_scheme = "red",
-                                high_contrast = False,
-                                width = "2%"
+                    size = "1",
+                    variant="outline",
+                    color_scheme = "red",
+                    high_contrast = False,
+                    width = "2%"
                     )
                         ),
-                max_width = "900px",
-                style = {
-                    "display": "flex",
-                    "width": "80%",
-                    "height": "630px"
-                }
+                max_width = ["90vw", "900px"],
+                max_height = ["90vh", "900px"],
+                style = {"display": "flex", "flex_direction": "row", "height": "50vh", "width": "50vw"}
                     ),
                 ),
             ),
-            width="33%",
-            spacing="4",
-            margin="4px",
-            padding="4px"    
+            width=["100%", "100%", "33%"],
+            margin="1rem",
+            padding="1rem"    
         ),
-    spacing="4",
-    #padding="1em",
+    #spacing="1rem",
     flex_direction=["column", "column", "row"],
-    #height="600px",
-    width="100%",
-    margin = Size.DEFAULT.value
+    width=["100%", "100%", "100%"],
+    margin=["0 auto", "0 auto", Size.DEFAULT.value],
+    #max_width=["100vw", "1200px"], 
+    padding=["0.5rem", "0.5rem", "0.5rem"]
     )
