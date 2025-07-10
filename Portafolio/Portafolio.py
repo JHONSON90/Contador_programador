@@ -34,7 +34,7 @@ def index() -> rx.Component:
             align_items="center",
             justify_content="center",
         ),
-        class_name="bg-gradient-to-br from-black via-[#19242B] to-[#446074]",
+        background="linear-gradient(45deg, #19242B, #446074)", #"bg-gradient-to-br from-black via-[#19242B] to-[#446074]",
         height="100vh",
         overflow="hidden",
         position="relative",
@@ -73,12 +73,12 @@ def programadorsr() -> rx.Component:
             align_items="center",
             justify_content="center",
         ),
-        class_name="bg-gradient-to-br from-black via-[#19242B] to-[#446074]",
+        background="linear-gradient(45deg, black, #446074)", 
         min_height="100vh",
         height="100%",
         width="100%",
         position="relative",
-        padding_top="4em",  # Añadir padding superior para compensar el navbar fijo,
+        padding_top="4em",
         overflow_y="auto"
     )
 
@@ -94,7 +94,7 @@ def hvcontador() -> rx.Component:
             align_items="center",
             justify_content="center",
         ),
-        class_name="bg-gradient-to-br from-black via-[#19242B] to-[#446074]",
+        background="linear-gradient(45deg, #446074, black)",
         min_height="100vh",
         height="100%",
         width="100%",

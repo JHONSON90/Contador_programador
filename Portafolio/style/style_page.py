@@ -154,27 +154,8 @@ def fondo_about_me():
     """Create the main page layout with background elements and profile content."""
     return rx.box(
         rx.box(
-            class_name="bg-gradient-to-r from-gray-500 to-black",
-            position="absolute",
-            top="0",
-            bottom="0",
-            right="0",
-            width="100%",
-        ),
-        # rx.flex(
-        #     create_profile_layout(),
-        #     position="absolute",
-        #     display="flex",
-        #     top="0",
-        #     right="0",
-        #     bottom="0",
-        #     left="0",
-        #     align_items="center",
-        #     justify_content="center",
-        # ),
-        rx.box(
             create_icon(
-                icon_color="#D1D5DB",
+                icon_color="#0353a4",
                 icon_height="100%",
                 icon_tag="triangle",
                 icon_width="100%",
@@ -188,7 +169,7 @@ def fondo_about_me():
         ),
         rx.box(
             create_icon(
-                icon_color="#D1D5DB",
+                icon_color="#adb5bd",
                 icon_height="100%",
                 icon_tag="circle",
                 icon_width="100%",
@@ -202,9 +183,12 @@ def fondo_about_me():
             transform="rotate(180deg)",
             width="16rem",
         ),
-        background_color="#ffffff",
+        background="linear-gradient(gray, black)",
+
         height="100vh",
         overflow="hidden",
         position="relative",
         width="100%",
     )
+
+    
